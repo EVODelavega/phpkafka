@@ -57,6 +57,17 @@ Download and install [librdkafka](https://github.com/edenhill/librdkafka/). Run 
 
 Installing PHP extension:
 ----------
+
+#### With Homebrew (For Mac users)
+
+```bash
+$ brew install php56-kafka
+```
+
+Note: Install `php53-kafka`, `php54-kafka`, `php55-kafka`, `php56-kafka` or `php70-kafka` depends on PHP version on your machine.
+
+#### Compiling from source code
+
 ```bash
 phpize
 ./configure --enable-kafka
