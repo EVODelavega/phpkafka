@@ -27,6 +27,12 @@ echo "/usr/local/lib" >> /etc/ld.so.conf.d/librd.conf
 
 Or simply type `vim /etc/ld.so.conf.d/librd.conf`, when the editor opens, tap _":"_ (colon), and run the command `read !locate librdkafka.so.1`, delete the filename from the path (move your cursor to the last `/` of the line that just appeared in the file and type `d$` (delete until end of line). Save and close the file (`:wq`).
 
+Once updated, run the following:
+
+```bash
+sudo ldconfig
+```
+
 
 _Note:_
 
